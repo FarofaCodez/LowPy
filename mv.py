@@ -6,8 +6,8 @@ for i in range(len(sys.argv)):
 		continue
 	if i != len(sys.argv):
 		toMove.append(sys.argv[i])
-	else:
-		target = sys.argv[i]
+
+target = sys.argv[-1]
 
 for item in toMove:
 	os.rename(item, target)
