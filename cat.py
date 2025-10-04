@@ -5,6 +5,6 @@ for i in range(len(sys.argv)):
 	else:
 		try:
 			with open(sys.argv[i]) as file:
-				print(file.read())
+				print(file.read(), end="")
 		except:
 			print(f"Failed to open file {sys.argv[i]}")
